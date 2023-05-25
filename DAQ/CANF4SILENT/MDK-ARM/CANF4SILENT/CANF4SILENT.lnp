@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"canf4silent\startup_stm32f446xx.o"
+"canf4silent\main.o"
+"canf4silent\stm32f4xx_it.o"
+"canf4silent\stm32f4xx_hal_msp.o"
+"canf4silent\stm32f4xx_hal_can.o"
+"canf4silent\stm32f4xx_hal_rcc.o"
+"canf4silent\stm32f4xx_hal_rcc_ex.o"
+"canf4silent\stm32f4xx_hal_flash.o"
+"canf4silent\stm32f4xx_hal_flash_ex.o"
+"canf4silent\stm32f4xx_hal_flash_ramfunc.o"
+"canf4silent\stm32f4xx_hal_gpio.o"
+"canf4silent\stm32f4xx_hal_dma_ex.o"
+"canf4silent\stm32f4xx_hal_dma.o"
+"canf4silent\stm32f4xx_hal_pwr.o"
+"canf4silent\stm32f4xx_hal_pwr_ex.o"
+"canf4silent\stm32f4xx_hal_cortex.o"
+"canf4silent\stm32f4xx_hal.o"
+"canf4silent\stm32f4xx_hal_exti.o"
+"canf4silent\stm32f4xx_hal_tim.o"
+"canf4silent\stm32f4xx_hal_tim_ex.o"
+"canf4silent\stm32f4xx_hal_uart.o"
+"canf4silent\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "CANF4SILENT\CANF4SILENT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CANF4SILENT.map" -o CANF4SILENT\CANF4SILENT.axf

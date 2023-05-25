@@ -1,0 +1,18 @@
+*1.Time Resultion is constant can be calcualted in the initilize state.
+*2.The Timing over flow Handling mechanism can be handled better than this instead
+of making a sepreate function and calling it in the superloop.
+*3.Hardware registers can be accessed by using Hal API's.
+*4.All this caluclation can be done out of intterupt and the intterupt
+is just used to capture the the timing values.
+5.there is an overall better design.
+	5.1 Don't use extern keyword instead use getter functions.
+	5.2 statcic keyword is not used in filescoped variables.
+*6.If the metal is not symetrical there will be an issues so we can 
+take 4 inputs and calcualate the average of all of them.
+*7.if the two sensros in the rare wheels don't matter so we can 
+Dispense them, but when the car is slipping we can include them in the speed
+average calculations to get more accurate readings.
+8.if the two rare wheels' RPM is less priority so we can send the CAN message as follows
+FRONT_LEFT_RPM | FRONT_RIGHT_RPM | SPEED;		
+
+				Why using RTOS

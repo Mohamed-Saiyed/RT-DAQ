@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mpu9250\startup_stm32f103xb.o"
+"mpu9250\main.o"
+"mpu9250\stm32f1xx_it.o"
+"mpu9250\stm32f1xx_hal_msp.o"
+"mpu9250\stm32f1xx_hal_gpio_ex.o"
+"mpu9250\stm32f1xx_hal_i2c.o"
+"mpu9250\stm32f1xx_hal.o"
+"mpu9250\stm32f1xx_hal_rcc.o"
+"mpu9250\stm32f1xx_hal_rcc_ex.o"
+"mpu9250\stm32f1xx_hal_gpio.o"
+"mpu9250\stm32f1xx_hal_dma.o"
+"mpu9250\stm32f1xx_hal_cortex.o"
+"mpu9250\stm32f1xx_hal_pwr.o"
+"mpu9250\stm32f1xx_hal_flash.o"
+"mpu9250\stm32f1xx_hal_flash_ex.o"
+"mpu9250\stm32f1xx_hal_exti.o"
+"mpu9250\stm32f1xx_hal_tim.o"
+"mpu9250\stm32f1xx_hal_tim_ex.o"
+"mpu9250\stm32f1xx_hal_uart.o"
+"mpu9250\system_stm32f1xx.o"
+"mpu9250\mpu9250.o"
+"mpu9250\quaternion.o"
+"mpu9250\adafruit_bno055.o"
+--library_type=microlib --strict --scatter "MPU9250\MPU9250.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MPU9250.map" -o MPU9250\MPU9250.axf
